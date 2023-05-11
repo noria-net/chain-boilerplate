@@ -25,7 +25,7 @@ validators:
     bonded: 100000000stake
 build:
   main: ./cmd/wasmd
-  binary: wasmd
+  binary: chaind
 genesis:
   app_state:
     bank:
