@@ -17,10 +17,10 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/auth/tx"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
 
-	"github.com/CosmWasm/wasmd/app/params"
-	wasmkeeper "github.com/CosmWasm/wasmd/x/wasm/keeper"
-	"github.com/CosmWasm/wasmd/x/wasm/keeper/testdata"
-	"github.com/CosmWasm/wasmd/x/wasm/types"
+	"github.com/noria-net/chain-boilerplate/app/params"
+	wasmkeeper "github.com/noria-net/chain-boilerplate/x/wasm/keeper"
+	"github.com/noria-net/chain-boilerplate/x/wasm/keeper/testdata"
+	"github.com/noria-net/chain-boilerplate/x/wasm/types"
 )
 
 // Simulation operation weights constants

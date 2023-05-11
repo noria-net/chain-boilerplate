@@ -6,7 +6,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/server"
 	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
 
-	"github.com/CosmWasm/wasmd/app"
+	"github.com/noria-net/chain-boilerplate/app"
 )
 
 func main() {

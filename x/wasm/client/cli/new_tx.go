@@ -9,7 +9,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client/tx"
 	"github.com/spf13/cobra"
 
-	"github.com/CosmWasm/wasmd/x/wasm/types"
+	"github.com/noria-net/chain-boilerplate/x/wasm/types"
 )
 
 // MigrateContractCmd will migrate a contract to a new code version

@@ -12,7 +12,7 @@ import (
 	host "github.com/cosmos/ibc-go/v7/modules/core/24-host"
 	ibcexported "github.com/cosmos/ibc-go/v7/modules/core/exported"
 
-	"github.com/CosmWasm/wasmd/x/wasm/types"
+	"github.com/noria-net/chain-boilerplate/x/wasm/types"
 )
 
 var _ porttypes.IBCModule = IBCHandler{}

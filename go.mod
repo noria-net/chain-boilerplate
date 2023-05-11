@@ -1,4 +1,4 @@
-module github.com/CosmWasm/wasmd
+module github.com/noria-net/chain-boilerplate
 
 go 1.19
 

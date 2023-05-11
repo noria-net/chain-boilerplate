@@ -3,7 +3,7 @@ package keeper_test
 import (
 	"testing"
 
-	"github.com/CosmWasm/wasmd/x/wasm/types"
+	"github.com/noria-net/chain-boilerplate/x/wasm/types"
 
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
@@ -12,8 +12,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/CosmWasm/wasmd/app"
-	"github.com/CosmWasm/wasmd/x/wasm"
+	"github.com/noria-net/chain-boilerplate/app"
+	"github.com/noria-net/chain-boilerplate/x/wasm"
 )
 
 func TestModuleMigrations(t *testing.T) {

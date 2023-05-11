@@ -25,11 +25,11 @@ import (
 	"github.com/spf13/cast"
 	"github.com/spf13/cobra"
 
-	"github.com/CosmWasm/wasmd/x/wasm/client/cli"
-	"github.com/CosmWasm/wasmd/x/wasm/exported"
-	"github.com/CosmWasm/wasmd/x/wasm/keeper"
-	"github.com/CosmWasm/wasmd/x/wasm/simulation"
-	"github.com/CosmWasm/wasmd/x/wasm/types"
+	"github.com/noria-net/chain-boilerplate/x/wasm/client/cli"
+	"github.com/noria-net/chain-boilerplate/x/wasm/exported"
+	"github.com/noria-net/chain-boilerplate/x/wasm/keeper"
+	"github.com/noria-net/chain-boilerplate/x/wasm/simulation"
+	"github.com/noria-net/chain-boilerplate/x/wasm/types"
 )
 
 var (

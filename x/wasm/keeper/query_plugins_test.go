@@ -25,10 +25,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/CosmWasm/wasmd/app"
-	"github.com/CosmWasm/wasmd/x/wasm/keeper"
-	"github.com/CosmWasm/wasmd/x/wasm/keeper/wasmtesting"
-	"github.com/CosmWasm/wasmd/x/wasm/types"
+	"github.com/noria-net/chain-boilerplate/app"
+	"github.com/noria-net/chain-boilerplate/x/wasm/keeper"
+	"github.com/noria-net/chain-boilerplate/x/wasm/keeper/wasmtesting"
+	"github.com/noria-net/chain-boilerplate/x/wasm/types"
 )
 
 func TestIBCQuerier(t *testing.T) {

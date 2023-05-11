@@ -14,8 +14,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/CosmWasm/wasmd/x/wasm/keeper"
-	"github.com/CosmWasm/wasmd/x/wasm/types"
+	"github.com/noria-net/chain-boilerplate/x/wasm/keeper"
+	"github.com/noria-net/chain-boilerplate/x/wasm/types"
 )
 
 func TestOnRecvPacket(t *testing.T) {

@@ -9,10 +9,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
 
-	"github.com/CosmWasm/wasmd/x/wasm"
-	"github.com/CosmWasm/wasmd/x/wasm/exported"
-	v2 "github.com/CosmWasm/wasmd/x/wasm/migrations/v2"
-	"github.com/CosmWasm/wasmd/x/wasm/types"
+	"github.com/noria-net/chain-boilerplate/x/wasm"
+	"github.com/noria-net/chain-boilerplate/x/wasm/exported"
+	v2 "github.com/noria-net/chain-boilerplate/x/wasm/migrations/v2"
+	"github.com/noria-net/chain-boilerplate/x/wasm/types"
 )
 
 type mockSubspace struct {

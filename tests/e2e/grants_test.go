@@ -14,9 +14,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/CosmWasm/wasmd/tests/e2e"
-	"github.com/CosmWasm/wasmd/x/wasm/ibctesting"
-	"github.com/CosmWasm/wasmd/x/wasm/types"
+	"github.com/noria-net/chain-boilerplate/tests/e2e"
+	"github.com/noria-net/chain-boilerplate/x/wasm/ibctesting"
+	"github.com/noria-net/chain-boilerplate/x/wasm/types"
 )
 
 func TestGrants(t *testing.T) {
