@@ -38,6 +38,7 @@ import (
 	"github.com/noria-net/chain-boilerplate/x/wasm"
 	wasmkeeper "github.com/noria-net/chain-boilerplate/x/wasm/keeper"
 	wasmtypes "github.com/noria-net/chain-boilerplate/x/wasm/types"
+	// this line is used by starport scaffolding # root/moduleImport
 )
 
 // NewRootCmd creates a new root command for wasmd. It is called once in the
@@ -175,6 +176,7 @@ func initRootCmd(rootCmd *cobra.Command, encodingConfig params.EncodingConfig) {
 		queryCommand(),
 		txCommand(),
 		keys.Commands(app.DefaultNodeHome),
+		// this line is used by starport scaffolding # root/commands
 	)
 	// add rosetta
 	rootCmd.AddCommand(rosettaCmd.RosettaCommand(encodingConfig.InterfaceRegistry, encodingConfig.Marshaler))
@@ -183,6 +185,7 @@ func initRootCmd(rootCmd *cobra.Command, encodingConfig params.EncodingConfig) {
 func addModuleInitFlags(startCmd *cobra.Command) {
 	crisis.AddModuleInitFlags(startCmd)
 	wasm.AddModuleInitFlags(startCmd)
+	// this line is used by starport scaffolding # root/arguments
 }
 
 // genesisCommand builds genesis-related `simd genesis` command. Users may provide application specific commands as a parameter
