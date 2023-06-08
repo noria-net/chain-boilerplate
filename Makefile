@@ -55,11 +55,11 @@ build_tags_comma_sep := $(subst $(empty),$(comma),$(build_tags))
 
 # process linker flags
 
-ldflags = -X github.com/cosmos/cosmos-sdk/version.Name=wasm \
-		  -X github.com/cosmos/cosmos-sdk/version.AppName=wasmd \
+ldflags = -X github.com/cosmos/cosmos-sdk/version.Name=chain \
+		  -X github.com/cosmos/cosmos-sdk/version.AppName=chaind \
 		  -X github.com/cosmos/cosmos-sdk/version.Version=$(VERSION) \
 		  -X github.com/cosmos/cosmos-sdk/version.Commit=$(COMMIT) \
-		  -X github.com/noria-net/chain-boilerplate/app.Bech32Prefix=wasm \
+		  -X github.com/noria-net/chain-boilerplate/app.Bech32Prefix=chain \
 		  -X "github.com/cosmos/cosmos-sdk/version.BuildTags=$(build_tags_comma_sep)"
 
 ifeq ($(WITH_CLEVELDB),yes)
@@ -80,10 +80,11 @@ all: install lint test
 
 build: go.sum
 ifeq ($(OS),Windows_NT)
-	$(error wasmd server not supported. Use "make build-windows-client" for client)
+	$(error chaind server not supported. Use "make build-windows-client" for client)
 	exit 1
 else
 	go build -mod=readonly $(BUILD_FLAGS) -o build/wasmd ./cmd/wasmd
+	mv build/wasmd build/chaind
 endif
 
 build-windows-client: go.sum
@@ -98,6 +99,7 @@ endif
 
 install: go.sum
 	go install -mod=readonly $(BUILD_FLAGS) ./cmd/wasmd
+	mv $(GOPATH)/bin/wasmd $(GOPATH)/bin/chaind
 
 ########################################
 ### Tools & dependencies

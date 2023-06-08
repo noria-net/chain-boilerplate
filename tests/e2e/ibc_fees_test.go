@@ -17,9 +17,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
+	wasmibctesting "github.com/CosmWasm/wasmd/x/wasm/ibctesting"
+	wasmtypes "github.com/CosmWasm/wasmd/x/wasm/types"
 	"github.com/noria-net/chain-boilerplate/app"
-	wasmibctesting "github.com/noria-net/chain-boilerplate/x/wasm/ibctesting"
-	wasmtypes "github.com/noria-net/chain-boilerplate/x/wasm/types"
 )
 
 func TestIBCFeesTransfer(t *testing.T) {

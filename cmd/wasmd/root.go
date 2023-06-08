@@ -33,11 +33,11 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
+	"github.com/CosmWasm/wasmd/x/wasm"
+	wasmkeeper "github.com/CosmWasm/wasmd/x/wasm/keeper"
+	wasmtypes "github.com/CosmWasm/wasmd/x/wasm/types"
 	"github.com/noria-net/chain-boilerplate/app"
 	"github.com/noria-net/chain-boilerplate/app/params"
-	"github.com/noria-net/chain-boilerplate/x/wasm"
-	wasmkeeper "github.com/noria-net/chain-boilerplate/x/wasm/keeper"
-	wasmtypes "github.com/noria-net/chain-boilerplate/x/wasm/types"
 	// this line is used by starport scaffolding # root/moduleImport
 )
 
